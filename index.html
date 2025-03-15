@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auro.edu Course Completion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <div class="container">
+        <h2>Select Your Course</h2>
+        <select id="courseSelect">
+            <option value="">-- Choose a Course --</option>
+            <option value="JavaScript in Depth">JavaScript in Depth</option>
+            <option value="Front-End Libraries and Frameworks">Front-End Libraries and Frameworks</option>
+            <option value="Building and Deploying a Web App">Building and Deploying a Web App</option>
+            <option value="Advanced jQuery Techniques">Advanced jQuery Techniques</option>
+            <option value="Real-World ReactJS Projects">Real-World ReactJS Projects</option>
+            <option value="Advanced Flutter Development/CD">Advanced Flutter Development/CD</option>
+        </select>
+        <button onclick="startCourse()">Start Course</button>
+        <p id="message"></p>
+        
+        <div id="courseDetails" class="hidden">
+            <h3>Course Details</h3>
+            <p id="courseInfo"></p>
+        </div>
+        
+        <div id="progressBar" class="hidden">
+            <div id="progress"></div>
+            <p id="progressText">0%</p>
+        </div>
+        
+        <p id="completionMessage"></p>
+        <button id="certificateButton" class="hidden">Download Certificate</button>
+        
+        <div class="app-links">
+            <a href="https://apps.apple.com" target="_blank">Download for iOS</a>
+            <a href="https://play.google.com" target="_blank">Download for Android</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

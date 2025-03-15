@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #7a1c35;
+    padding: 20px;
+}
+.container {
+    background: rgb(117, 174, 48);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+select, button, .app-links a {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.app-links a {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+.success {
+    color: green;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+#progressBar {
+    width: 100%;
+    background: #ddd;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#progress {
+    width: 0;
+    height: 100%;
+    background: green;
+    border-radius: 5px;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode select,
+.dark-mode button,
+.dark-mode .app-links a {
+    background: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+.dark-mode #progressBar {
+    background: #444;
+}
+
+.dark-mode #progress {
+    background: #4caf50;
+}
